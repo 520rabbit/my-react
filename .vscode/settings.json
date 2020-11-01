@@ -1,0 +1,34 @@
+{
+  "emmet.excludeLanguages": [
+    "markdown"
+  ],
+  "typescript.disableAutomaticTypeAcquisition": true,
+  "auto-close-tag.activationOnLanguage": [
+    "xml",
+    "php",
+    "blade",
+    "ejs",
+    "jinja",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "plaintext",
+    "markdown",
+    "vue",
+    "liquid",
+    "erb",
+    "lang-cfml",
+    "cfml",
+    "HTML (EEx)",
+    "HTML (Eex)",
+    "plist",
+    "react"
+  ],
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "bracketPairColorizer.excludedLanguages": [
+  
+  ]
+}
