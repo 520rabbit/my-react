@@ -2,8 +2,7 @@ import React, { memo, useEffect, useState } from 'react'
 import { useSelector, useDispatch, shallowEqual } from 'react-redux'
 import cryptoJS from "crypto-js"
 import { Form, Input, Button } from 'antd';
-import { createFromIconfontCN } from '@ant-design/icons';
-import { EnvironmentOutlined } from '@ant-design/icons';
+import { createFromIconfontCN, EnvironmentOutlined } from '@ant-design/icons';
 import './login.less'
 
 // 导入分离的组件
@@ -23,7 +22,6 @@ export default memo(function Login(props) {
     password: "A123456.",
     uuid: ""
   });
-
   /**
    *  主要发送网络请求
    */
@@ -33,7 +31,6 @@ export default memo(function Login(props) {
     dispatch(getAddressData())
     loginForm.uuid = randomWord() // 给uuid赋值
   }, [dispatch, loginForm])
-
   /**
    *  拿到redux相关联数据
    */

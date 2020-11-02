@@ -4,7 +4,7 @@ import './index.less'
 
 export default memo(function LoginHeader(props) {
   return (
-    <div className="login-header">
+    <div id="login-header">
       <div className="logo">
         <img src={BASE_URL + props.loginInfo.sysImg} alt=""/>
       </div>

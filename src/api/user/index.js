@@ -16,11 +16,19 @@ export const getIpAddress = () => {
   })
 }
 
-// 登录
+// 3.登录
 export const handleLogin = (data) => {
   return ajax({
     url: '/login',
     method: 'post',
     data
+  })
+}
+
+// 4.获取用户信息
+export const getUserInfo = () => {
+  return ajax({
+    url: '/getUserInfo',
+    method: 'get',
   })
 }

@@ -65,3 +65,13 @@ export const randomWord = () => {
   }
   return str;
 }
+
+// 保存请求头
+const userInfp = 'user-info'
+export function setInfo(themeStatus){
+  return localStorage.setItem(userInfp,themeStatus)
+} 
+
+export function getInfo(){
+  return localStorage.getItem(userInfp)
+} 
