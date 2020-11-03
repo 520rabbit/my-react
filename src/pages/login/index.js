@@ -74,6 +74,7 @@ export default memo(function Login(props) {
   const MyIcon = createFromIconfontCN({
     scriptUrl: '//at.alicdn.com/t/font_112760_v237lfc21m.js',
   });
+  
   return (
     <div id="login" style={bgStyel}>
       <LoginHeader loginInfo={loginInfo} />

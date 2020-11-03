@@ -15,6 +15,9 @@
       text-align: center;
       cursor: pointer;
       display: block;
+      &.anticon-down {
+        font-size: 16px;
+      }
     }
     &:hover {
       background: #336;
@@ -23,6 +26,13 @@
     .normal {
       transform: rotate(0);
       transition: all 1s;
+      .anticon {
+        font-weight: 550;
+        font-size: 28px;
+        text-align: center;
+        cursor: pointer;
+        display: block;
+      }
       &.active {
         transform: rotate(360deg);
         transition: all 1s;
@@ -31,27 +41,71 @@
     
   }
   .set-lists {
-    position: absolute;
-    padding-left: 20px;
-    box-sizing: border-box;
+    position: absolute; 
     top: 65px;
     right: 50px;
     width: 100px;
-    height: 520px;
-    background: #ff5777;
+    height: 0px;
+    overflow: hidden;
     width: 180px;
     z-index: 1020;
+    background: #fff;
+    box-shadow: 0 0 15px #959595;
+    transition: all .6s;
+    &.active {
+      height: 530px;
+      transition: all .6s;
+    }
     .magnet-list {
       .set-item {
         line-height: 38px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        cursor: pointer;
         .anticon {
           margin-right: 8px;
+        }
+        &:hover {
+          background: #ff5777;
+          color: #fff;
         }
       }
     }
     .theme-lists {
       .theme-item {
         line-height: 38px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        cursor: pointer;
+        span {
+          display: inline-block;
+          width: 15px; 
+          height: 15px; 
+          margin-right: 8px;
+        }
+        &:hover {
+          background: #ff5777;
+          color: #fff;
+        }
+      }
+    }
+    .login-headle {
+      border-top: 1px solid rgb(204, 204, 204);
+      border-bottom: 1px solid rgb(204, 204, 204);
+      padding: 10px 0px;
+      box-sizing: border-box;
+      .set-item {
+        line-height: 38px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        cursor: pointer;
+        .anticon {
+          margin-right: 8px;
+        }
+        &:hover {
+          background: #ff5777;
+          color: #fff;
+        }
       }
     }
   }
